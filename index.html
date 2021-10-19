@@ -5,35 +5,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/utilities.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media-query.css" />
     <title>Abiona Kehinde | Currriculum Vitae</title>
 </head>
 
 <body>
-    <!--NavBar-->
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo" style="font-weight: 900;">Abiona Kehinde</h1>
-            <nav>
-                <ul>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#Work-experience">Work experience</a></li>
-                    <li><a href="#referee">Referee</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
 
-                </ul>
-            </nav>
+    <header>
+        <div class="navbar" id="navs">
+            <div class="container flex">
+                <h1 class="logo">Abiona Kehinde</h1>
+                <nav id="navigation">
+                    <ul>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#experience">Experiences</a></li>
+                        <li><a href="#referee">Referee</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </nav>
+                <div id="hamburger-div">
+                    <a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="navigationVertical" style="display:none">
+                <a href="#education">Education</a>
+                <a href="#experience">Experiences</a>
+                <a href="#referee">Referee</a>
+                <a href="#contact">Contact</a>
+                <a href="#gallery">Gallery</a>
+            </div>
         </div>
-    </div>
-
+    </header>
     <!--Showcase-->
     <section class="showcase">
-        <div class="container grid">
-            <div class="showcase-text">
-                <h3>Professional Summary</h3>
-                <p>
+        <div class="container grid ">
+            <div class="showcase-text" style="color: rgb(241, 188, 13);">
+                <h3 id="professional-title">Professional Summary</h3>
+                <p id="professional-text">
                     Software Engineer Intern dedicated to improving skills through hands-on learning and development work. Understands HTML5, JavaScript and CSS; Well-organized and collaborative team player with strong communication and analytical abilities</p>
             </div>
 
@@ -63,7 +78,7 @@
 
     <!-- education -->
     <section class="education" id="education">
-        <div class="container">
+        <div class="heading-title">
             <h1 class="heading">
                 <span>e</span>
                 <span>d</span>
@@ -74,11 +89,11 @@
                 <span>i</span>
                 <span>o</span>
                 <span>n</span>
-
-
             </h1>
+        </div>
 
 
+        <div class="container">
             <div class="grid grid-6 text-left my-4">
                 <div>
                     <p>Federal University of Agriculture Abeokuta</p>
@@ -113,11 +128,7 @@
     <section class="Work-experience" id="Work-experience">
         <div class="container">
             <h1 class="heading">
-                <span>w</span>
-                <span>o</span>
-                <span>r</span>
-                <span>k</span>
-                <span>-</span>
+
                 <span>e</span>
                 <span>x</span>
                 <span>p</span>
@@ -128,9 +139,7 @@
                 <span>n</span>
                 <span>c</span>
                 <span>e</span>
-
-
-
+                <span>s</span>
 
             </h1>
 
@@ -145,7 +154,7 @@
                     </ul>
                 </div>
                 <div>
-                    <p style="margin-top: -5px;"> 01/2021 – Till date</p>
+                    <p style="margin-top: -5px; font-weight: bold; "> 01/2021 – Till date</p>
 
                 </div>
             </div>
@@ -161,7 +170,7 @@
                     </ul>
                 </div>
                 <div>
-                    <p style="margin-top: -5px;"> 02/2020 - 11/2020</p>
+                    <p style="margin-top: -5px; font-weight: bold;"> 02/2020 - 11/2020</p>
                 </div>
             </div>
             <div class="grid grid-6 text-left my-4">
@@ -176,37 +185,40 @@
                     </ul>
                 </div>
                 <div>
-                    <p style="margin-top: -5px;"> 11/2019 - 11/2019</p>
+                    <p style="margin-top: -5px; font-weight: bold;"> 11/2019 - 11/2019</p>
                 </div>
             </div>
-            <div>
-                <h2>National Youth Service Corps - Chemistry Teacher</h2>
-                <span class="degree-span">Okenne, Kogi</span>
-                <ul>
-                    <li>Produced lesson notes for the teaching and education of students in chemistry</li>
-                    <li>Prepared students for term exams and for WAEC. </li>
-                    <li>Incorporated exciting and engaging activities to achieve student participation and hands-on learning.</li>
-                    <li> Instructed students in lab by teaching safety protocols for proper use of chemicals and safe disposal of hazardous materials.</li>
-                    <li>Communicated frequently with parents, students and faculty to provide feedback and discuss instructional strategies</li>
-                </ul>
-            </div>
-            <div>
-                <p style="margin-top: -5px;"> 01/2021 – Till date</p>
+            <div class="grid grid-6 text-left my-4">
+                <div>
+                    <h2>National Youth Service Corps - Chemistry Teacher</h2>
+                    <span class="degree-span">Okenne, Kogi</span>
+                    <ul style="justify-content: left;">
+                        <li>Compiled lesson notes for the teaching of students in chemistry</li>
+                        <li>Prepared students for term exams. </li>
+                        <li>Incorporated exciting and engaging activities to achieve student participation.</li>
+                        <li>Communicated frequently with parents, students and faculty to provide <br> feedback and discuss instructional strategies</li>
+                    </ul>
+                </div>
+                <div>
+                    <p style="margin-top: -5px; font-weight: bold;"> 01/2021 – Till date</p>
 
+                </div>
             </div>
-            <div>
-                <h2>West African Examination Council - Examiner</h2>
-                <span class="degree-span">Kabba, Kogi State</span>
-                <ul>
+            <div class="grid grid-6 text-left my-4">
+                <div>
+                    <h2>West African Examination Council - Examiner</h2>
+                    <span class="degree-span">Kabba, Kogi State</span>
+                    <ul>
 
-                    <li>Ensured that all examination materials are available</li>
-                    <li> Ensured that all students adhered to examination guidelines.</li>
-                    <li> Monitored students during tests</li>
-                </ul>
-            </div>
-            <div>
-                <p style="margin-top: -5px;"> 01/2021 – Till date</p>
+                        <li>Ensured that all examination materials are available</li>
+                        <li> Ensured that all students adhered to examination guidelines.</li>
+                        <li> Monitored students during tests</li>
+                    </ul>
+                </div>
+                <div>
+                    <p style="margin-top: -5px; font-weight: bold;"> 01/2021 – Till date</p>
 
+                </div>
             </div>
 
         </div>
@@ -263,15 +275,18 @@
             <span>t</span>
         </h1>
 
+        <div class="container">
 
-        <div class="links">
-            <ul>
-                <li> <span class="column-text">Email</span>: abionkennie@gmail.com</li>
-                <li> <span class="column-text">Phone number</span>: +2349038158732</li>
-                <li><span class="column-text"> Residential address</span>: Itire, Lagos 100001</li>
-                <li> <span class="column-text">Github</span>: https://github.com/abionkennie</li>
-                <li> <span class="column-text">LinkedIn</span>: https://linkedin.com/in/abiona-kehinde-92138a181</li>
-            </ul>
+
+            <div class="links">
+                <ul>
+                    <li> <span class="column-text">Email</span>: abionkennie@gmail.com</li>
+                    <li> <span class="column-text">Phone number</span>: +2349038158732</li>
+                    <li><span class="column-text"> Residential address</span>: Itire, Lagos 100001</li>
+                    <li> <span class="column-text">Github</span>: https://github.com/abionkennie</li>
+                    <li> <span class="column-text">LinkedIn</span>: https://linkedin.com/in/abiona-kehinde-92138a181</li>
+                </ul>
+            </div>
 
         </div>
 
@@ -289,31 +304,38 @@
             <span>r</span>
             <span>y</span>
         </h1>
-        <div>
+        <div id="box-pics">
             <div class="box-container">
-                <div class="box" id="first">
-                    <img src="images/unaab1.jpeg" alt="">
-                    <div class="content">
-                        <p id="btnFirst-info-tag">Time-out with friends after our final papers.</p>
-                        <button class="btn" id="btnFirst">View more info</button>
+                <div class="f-row" style="display: flex">
+                    <div class="w-size">
+                        <div class="box" id="first">
+                            <img src="images/unaab1.jpeg" alt="">
+                            <div class="content">
+                                <p id="btnFirst-info-tag">Time-out with friends after our final papers.</p>
+                                <button class="btn" id="btnFirst">View more info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-size" style="flex-grow: 1;">
+                        <div class="box" id="second">
+                            <img src="images/training1.jpeg" alt="">
+                            <div class="content">
+                                <p class="btnSecond-info-tag">Training days with colleagues at Abirot LTD</p>
+                                <button class="btn" id="btnSecond">View more info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-size" style="flex-grow: 1;">
+                        <div class="box" id="third">
+                            <img src="images/self.jpeg" alt="">
+                            <div class="content">
+                                <p id="btnThird-info-tag">Selfie</p>
+                                <button class="btn" id="btnThird">View more info</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="box" id="second">
-                    <img src="images/training1.jpeg" alt="">
-                    <div class="content">
-                        <p class="btnSecond-info-tag">Training days with colleagues at Abirot LTD</p>
-                        <button class="btn" id="btnSecond">View more info</button>
-                    </div>
-                </div>
-
-                <div class="box" id="third">
-                    <img src="images/self.jpeg" alt="">
-                    <div class="content">
-                        <p id="btnThird-info-tag">Selfie</p>
-                        <button class="btn" id="btnThird">View more info</button>
-                    </div>
-                </div>
                 <div class="box" id="fourth">
                     <img src="images/nysc.jpeg" alt="">
                     <div class="content">
@@ -338,7 +360,13 @@
                     </div>
                 </div>
             </div>
+
+            <form id="add-pics">
+                <input type="checkbox" id="hide">
+                <label for="hide">Hide all pictures</label>
+            </form>
         </div>
+
     </section>
 
 
@@ -351,8 +379,12 @@
             </div>
         </div>
     </footer>
-    <script src="./script.js">
+
+    <script src="cordova.js"></script>
+    <script src="js/script.js">
     </script>
 </body>
+
+</html>
 
 </html>
